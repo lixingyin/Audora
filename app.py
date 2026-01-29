@@ -22,7 +22,7 @@ def generate_album_art(user_prompt):
     
     response = client.models.generate_content(
             model="gemini-2.5-flash-image",
-            contents=[prompt],
+            contents=[user_prompt],
         )
     
     for part in response.candidates[0].content.parts:
