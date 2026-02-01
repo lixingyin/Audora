@@ -65,5 +65,6 @@ with st.form("mood_form", clear_on_submit=True):
         success_message.empty()
     else:
         st.warning("Please enter a prompt to generate album art.")
+        
 
 
