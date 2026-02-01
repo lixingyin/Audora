@@ -46,6 +46,7 @@ def create_user_playlist(spotify_client, mood):
     # Create a playlist based on the user's mood
     return
 
+
 # main app
 st.title("Audora")
 st.write("Welcome to Audora! This is a simple app that uses OpenAI's API.")
@@ -62,5 +63,7 @@ with st.form("mood_form", clear_on_submit=True):
         generate_album_art(prompt)
 
         success_message.empty()
+    else:
+        st.warning("Please enter a prompt to generate album art.")
 
 
